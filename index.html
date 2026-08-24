@@ -1,244 +1,697 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DakalTech | Tienda de Teléfonos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DakalTech | Tienda de Celulares & Tecnología</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="container nav-container">
-            <h1 class="logo">Dakal<span>Tech</span></h1>
-            <a href="https://www.instagram.com/dakaltech?igsi=NmQ3dnlrZnBhOHNp" target="_blank" class="instagram-btn">
-                <i class="fab fa-instagram"><span>Síguenos</span></i>
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/18298780151" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-text">¡Chatea con nosotros!</span>
+  </a>
+
+  <!-- Encabezado / Barra de Navegación -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">Dakal</span>Tech
+      </a>
+      <nav class="nav-links">
+        <a href="#iphone">Apple iPhone</a>
+        <a href="#samsung">Samsung</a>
+        <a href="#xiaomi">Xiaomi / Redmi</a>
+        <a href="#otros">Otras Marcas</a>
+      </nav>
+      <a href="https://www.instagram.com/dakaltech?igsi=NmQ3dnlrZnBhOHNp" target="_blank" rel="noopener noreferrer" class="instagram-btn">
+        <i class="fa-brands fa-instagram"></i>
+        <span>@dakaltech</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Sección Principal / Hero -->
+  <section class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-content">
+      <span class="badge hero-badge">Los mejores precios de República Dominicana</span>
+      <h1 class="hero-title">Encuentra Tu Smartphone Soñado</h1>
+      <p class="hero-subtitle">iPhones, Samsung, Redmi, Tecno y más. Garantía, calidad y el mejor servicio directo a tu puerta.</p>
+      <div class="hero-actions">
+        <a href="#catalogo" class="btn btn-primary">Ver Catálogo Completo</a>
+        <a href="https://wa.me/18298780151" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo de Productos -->
+  <main class="container catalog" id="catalogo">
+
+    <!-- Sección Apple iPhone -->
+    <section class="brand-section" id="iphone">
+      <div class="section-header">
+        <i class="fa-brands fa-apple brand-icon"></i>
+        <div>
+          <h2>Línea Apple iPhone</h2>
+          <p>Potencia, elegancia y la mejor tecnología en tus manos</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=600&q=80" alt="iPhone XR" loading="lazy">
+            <span class="tag">Oferta</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone XR</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 64 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$8,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%20XR%2064GB" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=600&q=80" alt="iPhone 11" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>iPhone 11</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 64 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$11,490</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2011%2064GB" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=600&q=80" alt="iPhone 12" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>iPhone 12</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 64 GB / 256 GB</p>
+            <div class="card-footer">
+              <span class="price">Desde RD$13,490</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2012" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1603921326210-6edd2d60ca68?auto=format&fit=crop&w=600&q=80" alt="iPhone 12 Pro Max" loading="lazy">
+            <span class="tag tag-pro">Pro Max</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 12 Pro Max</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 128 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$21,490</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2012%20Pro%20Max" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1632661674596-df8be070a5c5?auto=format&fit=crop&w=600&q=80" alt="iPhone 13" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>iPhone 13</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 128 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$18,490</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2013" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1632661674596-df8be070a5c5?auto=format&fit=crop&w=600&q=80" alt="iPhone 13 Pro Max" loading="lazy">
+            <span class="tag tag-pro">Top Ventas</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 13 Pro Max</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 128 / 256 / 512 GB</p>
+            <div class="card-footer">
+              <span class="price">Desde RD$27,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2013%20Pro%20Max" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=600&q=80" alt="iPhone 14" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>iPhone 14</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 128 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$20,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2014" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=600&q=80" alt="iPhone 14 Plus" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>iPhone 14 Plus</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 128 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$23,490</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2014%20Plus" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=600&q=80" alt="iPhone 14 Pro" loading="lazy">
+            <span class="tag tag-pro">Pro</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 14 Pro</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 128 GB / 256 GB</p>
+            <div class="card-footer">
+              <span class="price">Desde RD$27,490</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2014%20Pro" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=600&q=80" alt="iPhone 14 Pro Max" loading="lazy">
+            <span class="tag tag-pro">Pro Max</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 14 Pro Max</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 256 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$34,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2014%20Pro%20Max" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80" alt="iPhone 15 Plus" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>iPhone 15 Plus</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 256 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$31,490</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2015%20Plus" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80" alt="iPhone 15 Pro Max" loading="lazy">
+            <span class="tag tag-titanium">Titanio</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 15 Pro Max</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 256 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$38,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2015%20Pro%20Max" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=600&q=80" alt="iPhone 16 Plus" loading="lazy">
+            <span class="tag tag-new">Nuevo</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 16 Plus</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 128 GB / 256 GB</p>
+            <div class="card-footer">
+              <span class="price">Desde RD$40,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2016%20Plus" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=600&q=80" alt="iPhone 16 Pro Max" loading="lazy">
+            <span class="tag tag-new">Nuevo</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 16 Pro Max</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 256 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$52,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2016%20Pro%20Max" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="iPhone 17" loading="lazy">
+            <span class="tag tag-flagship">Último Modelo</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 17</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> 256 GB de Almacenamiento</p>
+            <div class="card-footer">
+              <span class="price">RD$52,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2017" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card featured-card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="iPhone 17 Pro Max" loading="lazy">
+            <span class="tag tag-sealed">Sellado en Caja</span>
+          </div>
+          <div class="card-body">
+            <h3>iPhone 17 Pro Max</h3>
+            <p class="specs"><i class="fa-solid fa-box"></i> 256 GB — Totalmente Sellado</p>
+            <div class="card-footer">
+              <span class="price">RD$80,990</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20iPhone%2017%20Pro%20Max%20Sellado" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Samsung -->
+    <section class="brand-section" id="samsung">
+      <div class="section-header">
+        <i class="fa-brands fa-android brand-icon"></i>
+        <div>
+          <h2>Samsung Galaxy</h2>
+          <p>Innovación tecnológica y cámaras impresionantes</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80" alt="Samsung Galaxy S23 Ultra" loading="lazy">
+            <span class="tag tag-offer">¡Oferta Especial!</span>
+          </div>
+          <div class="card-body">
+            <h3>Galaxy S23 Ultra</h3>
+            <p class="specs"><i class="fa-solid fa-tag"></i> Detalles de pantalla mínimos</p>
+            <div class="price-container">
+              <span class="old-price">RD$31,500</span>
+              <span class="price highlight-price">RD$29,500</span>
+            </div>
+            <div class="card-footer" style="margin-top:10px;">
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Galaxy%20S23%20Ultra" class="buy-btn full-width" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar Ahora</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80" alt="Galaxy A27 5G" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Galaxy A27 5G</h3>
+            <p class="specs"><i class="fa-solid fa-wifi"></i> Conectividad 5G Ultra Rápida</p>
+            <div class="card-footer">
+              <span class="price">RD$16,800</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Galaxy%20A27%205G" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80" alt="Galaxy A17" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Galaxy A17</h3>
+            <p class="specs"><i class="fa-solid fa-mobile-screen"></i> Gran pantalla & Excelente Batería</p>
+            <div class="card-footer">
+              <span class="price">RD$11,500</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Galaxy%20A17" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Xiaomi / Redmi -->
+    <section class="brand-section" id="xiaomi">
+      <div class="section-header">
+        <i class="fa-solid fa-mobile-button brand-icon"></i>
+        <div>
+          <h2>Xiaomi / Redmi</h2>
+          <p>Rendimiento máximo al mejor costo del mercado</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Redmi Note 15 Pro" loading="lazy">
+            <span class="tag tag-pro">Pro</span>
+          </div>
+          <div class="card-body">
+            <h3>Redmi Note 15 Pro</h3>
+            <p class="specs"><i class="fa-solid fa-camera"></i> Cámara de alta resolución</p>
+            <div class="card-footer">
+              <span class="price">RD$17,800</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Redmi%20Note%2015%20Pro" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Redmi Note 15" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Redmi Note 15</h3>
+            <p class="specs"><i class="fa-solid fa-bolt"></i> Carga rápida y diseño elegante</p>
+            <div class="card-footer">
+              <span class="price">RD$12,800</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Redmi%20Note%2015" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Redmi 15 256 GB" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Redmi 15</h3>
+            <p class="specs"><i class="fa-solid fa-memory"></i> 256 GB Almacenamiento / 12 GB RAM</p>
+            <div class="card-footer">
+              <span class="price">Consulte WhatsApp</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Redmi%2015%20256GB" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Redmi 15C" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Redmi 15C</h3>
+            <p class="specs"><i class="fa-solid fa-battery-full"></i> Gran Batería para todo el día</p>
+            <div class="card-footer">
+              <span class="price">RD$8,300</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Redmi%2015C" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Redmi Note 14" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Redmi Note 14</h3>
+            <p class="specs"><i class="fa-solid fa-display"></i> Pantalla Fluida y Gran Color</p>
+            <div class="card-footer">
+              <span class="price">RD$10,800</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Redmi%20Note%2014" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Redmi A7 Pro" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Redmi A7 Pro</h3>
+            <p class="specs"><i class="fa-solid fa-shield-halved"></i> Calidad Garantizada</p>
+            <div class="card-footer">
+              <span class="price">RD$8,300</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Redmi%20A7%20Pro" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80" alt="Redmi A5" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Redmi A5</h3>
+            <p class="specs"><i class="fa-solid fa-wallet"></i> Ultra Económico</p>
+            <div class="card-footer">
+              <span class="price">RD$6,800</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Redmi%20A5" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Otras Marcas -->
+    <section class="brand-section" id="otros">
+      <div class="section-header">
+        <i class="fa-solid fa-layer-group brand-icon"></i>
+        <div>
+          <h2>Tecno, ZTE, Oukitel, Itel & Más</h2>
+          <p>Opciones accesibles para todas las necesidades</p>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=600&q=80" alt="Tecno Spark 40C" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Tecno Spark 40C</h3>
+            <p class="specs"><i class="fa-solid fa-star"></i> Excelente relación calidad-precio</p>
+            <div class="card-footer">
+              <span class="price">RD$9,000</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Tecno%20Spark%2040C" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=600&q=80" alt="Tecno Spark Go3" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Tecno Spark Go3</h3>
+            <p class="specs"><i class="fa-solid fa-thumbs-up"></i> Compacto y ágil</p>
+            <div class="card-footer">
+              <span class="price">RD$7,300</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Tecno%20Spark%20Go3" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&w=600&q=80" alt="Oukitel C62" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Oukitel C62</h3>
+            <p class="specs"><i class="fa-solid fa-shield"></i> Alta durabilidad</p>
+            <div class="card-footer">
+              <span class="price">RD$9,000</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Oukitel%20C62" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&w=600&q=80" alt="Oukitel C26" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Oukitel C26</h3>
+            <p class="specs"><i class="fa-solid fa-mobile-retro"></i> Diseño moderno y eficiente</p>
+            <div class="card-footer">
+              <span class="price">RD$8,000</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Oukitel%20C26" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=600&q=80" alt="ZTE Blade A56Pro" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>ZTE Blade A56Pro</h3>
+            <p class="specs"><i class="fa-solid fa-microchip"></i> Excelente rendimiento</p>
+            <div class="card-footer">
+              <span class="price">RD$7,500</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20ZTE%20Blade%20A56Pro" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=600&q=80" alt="ZTE Blade A36" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>ZTE Blade A36</h3>
+            <p class="specs"><i class="fa-solid fa-tag"></i> Súper accesible</p>
+            <div class="card-footer">
+              <span class="price">RD$6,500</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20ZTE%20Blade%20A36" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=600&q=80" alt="Itel City100" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Itel City100</h3>
+            <p class="specs"><i class="fa-solid fa-city"></i> Práctico y duradero</p>
+            <div class="card-footer">
+              <span class="price">RD$7,200</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Itel%20City100" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=600&q=80" alt="Itel A100C" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Itel A100C</h3>
+            <p class="specs"><i class="fa-solid fa-mobile"></i> Funciones completas</p>
+            <div class="card-footer">
+              <span class="price">RD$6,100</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Itel%20A100C" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&w=600&q=80" alt="Itel A50C S" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Itel A50C S</h3>
+            <p class="specs"><i class="fa-solid fa-hand-holding-dollar"></i> Economía máxima</p>
+            <div class="card-footer">
+              <span class="price">RD$5,800</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20Itel%20A50C%20S" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=600&q=80" alt="M 17 Pro Max" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>M 17 Pro Max</h3>
+            <p class="specs"><i class="fa-solid fa-expand"></i> Gran pantalla de alta definición</p>
+            <div class="card-footer">
+              <span class="price">RD$7,500</span>
+              <a href="https://wa.me/18298780151?text=Hola,%20me%20interesa%20el%20M%2017%20Pro%20Max" class="buy-btn" target="_blank"><i class="fa-solid fa-cart-shopping"></i> Comprar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de Página con Olas Marinas Animadas y Nubes -->
+  <footer class="ocean-footer">
+    <!-- Nubes flotantes animadas -->
+    <div class="clouds-container">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="cloud cloud-4"></div>
+    </div>
+
+    <!-- Olas marinas animadas con distintos tonos (sin espuma) -->
+    <div class="waves-wrapper">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(14, 165, 233, 0.4)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(2, 132, 199, 0.6)" opacity="0.8" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(3, 105, 161, 0.8)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#0f172a" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- Contenido Principal del Footer -->
+    <div class="footer-content">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo footer-logo"><span class="logo-accent">Dakal</span>Tech</a>
+          <p>Tu tienda de confianza para smartphones de alta gama y consumo masivo en República Dominicana. Envíos directos y atención personalizada.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/dakaltech?igsi=NmQ3dnlrZnBhOHNp" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
             </a>
+            <a href="https://wa.me/18298780151" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </div>
-    </header>
 
-    <main class="main-content">
-        <section class="hero">
-            <div class="container">
-                <h2>Tecnología de Vanguardia</h2>
-                <p>Encuentra tu próximo iPhone al mejor precio del mercado dominicano.</p>
-            </div>
-        </section>
-
-        <section class="products-section container">
-            <div class="products-grid">
-                
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=600&q=80" alt="iPhone XR">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone XR</h3>
-                        <p class="specs">64 GB</p>
-                        <p class="price">RD$8,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%20XR%2064%20GB" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=600&q=80" alt="iPhone 11">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 11</h3>
-                        <p class="specs">64 GB</p>
-                        <p class="price">RD$11,490</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2011%2064%20GB" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=600&q=80" alt="iPhone 12">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 12</h3>
-                        <p class="specs">64/256 GB</p>
-                        <p class="price">Desde RD$13,490</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2012" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1603539275466-9973244f2246?auto=format&fit=crop&w=600&q=80" alt="iPhone 12 Pro Max">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 12 Pro Max</h3>
-                        <p class="specs">128 GB</p>
-                        <p class="price">RD$21,490</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2012%20Pro%20Max" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="iPhone 13">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 13</h3>
-                        <p class="specs">128 GB</p>
-                        <p class="price">RD$18,490</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2013" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?auto=format&fit=crop&w=600&q=80" alt="iPhone 13 Pro Max">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 13 Pro Max</h3>
-                        <p class="specs">128/256/512 GB</p>
-                        <p class="price">Desde RD$27,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2013%20Pro%20Max" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80" alt="iPhone 14">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 14</h3>
-                        <p class="specs">128 GB</p>
-                        <p class="price">RD$20,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2014" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?auto=format&fit=crop&w=600&q=80" alt="iPhone 14 Plus">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 14 Plus</h3>
-                        <p class="specs">128 GB</p>
-                        <p class="price">RD$23,490</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2014%20Plus" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?auto=format&fit=crop&w=600&q=80" alt="iPhone 14 Pro">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 14 Pro</h3>
-                        <p class="specs">128/256 GB</p>
-                        <p class="price">Desde RD$27,490</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2014%20Pro" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1665686376573-04e9c7161b9a?auto=format&fit=crop&w=600&q=80" alt="iPhone 14 Pro Max">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 14 Pro Max</h3>
-                        <p class="specs">256 GB</p>
-                        <p class="price">RD$34,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2014%20Pro%20Max" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1695048133132-37887752e80c?auto=format&fit=crop&w=600&q=80" alt="iPhone 15 Plus">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 15 Plus</h3>
-                        <p class="specs">256 GB</p>
-                        <p class="price">RD$31,490</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2015%20Plus" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1695048132832-a5441584b8d7?auto=format&fit=crop&w=600&q=80" alt="iPhone 15 Pro Max">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 15 Pro Max</h3>
-                        <p class="specs">256 GB</p>
-                        <p class="price">RD$38,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2015%20Pro%20Max" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1725626153664-9b2f6ef858bb?auto=format&fit=crop&w=600&q=80" alt="iPhone 16 Plus">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 16 Plus</h3>
-                        <p class="specs">128/256 GB</p>
-                        <p class="price">Desde RD$40,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2016%20Plus" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1725626153664-9b2f6ef858bb?auto=format&fit=crop&w=600&q=80" alt="iPhone 16 Pro Max">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 16 Pro Max</h3>
-                        <p class="specs">256 GB</p>
-                        <p class="price">RD$52,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2016%20Pro%20Max" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=600&q=80" alt="iPhone 17">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 17</h3>
-                        <p class="specs">256 GB</p>
-                        <p class="price">RD$52,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2017" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=600&q=80" alt="iPhone 17 Pro Max sellado">
-                    </div>
-                    <div class="card-body">
-                        <h3>iPhone 17 Pro Max</h3>
-                        <p class="specs">256 GB sellado</p>
-                        <p class="price">RD$80,990</p>
-                        <a href="https://wa.me/18298780151?text=Hola,%20estoy%20interesado%20en%20el%20iPhone%2017%20Pro%20Max%20sellado" target="_blank" class="whatsapp-cta">Escríbenos</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <a href="https://wa.me/18298780151?text=Hola,%20vengo%20de%20su%20sitio%20web%20y%20quiero%20información" class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <footer class="footer">
-        <div class="waves-container">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#iphone">Apple iPhone</a></li>
+            <li><a href="#samsung">Samsung Galaxy</a></li>
+            <li><a href="#xiaomi">Xiaomi / Redmi</a></li>
+            <li><a href="#otros">Otras Marcas</a></li>
+          </ul>
         </div>
-        <div class="footer-content container">
-            <p>&copy; 2026 DakalTech. Todos los derechos reservados.</p>
+
+        <div class="footer-contact">
+          <h4>Contacto Directo</h4>
+          <p><i class="fa-solid fa-phone"></i> +1 (829) 878-0151</p>
+          <p><i class="fa-brands fa-whatsapp"></i> Chat Directo 24/7</p>
+          <p><i class="fa-brands fa-instagram"></i> @dakaltech</p>
+          <p><i class="fa-solid fa-location-dot"></i> República Dominicana</p>
         </div>
-    </footer>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2026 DakalTech. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
